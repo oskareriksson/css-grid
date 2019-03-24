@@ -46,6 +46,17 @@
     .container {
       display: grid;
       grid-gap: 20px;
+      grid-template-areas:
+        "test test test test hi hi hi hi" 
+        "test test test test hi hi hi hi" 
+        "test test test test hi hi hi hi" 
+        "test test test test hi hi hi hi"; 
+    }
+
+    .item3 {
+      /* grid-area: test; */
+      grid-column: test-start / hi-end;
+      grid-row-end: test-end;
     }
   </style>
 </body>
